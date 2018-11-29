@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta lang="ko"/>
+    <meta property="og:url" content="https://foodreet-e783e.firebaseapp.com/">
+    <meta property="og:site_name" content="캔디다이어리">
+    <meta property="og:title" content="캔디다이어리">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/foodreet-e783e.appspot.com/o/candy2.png?alt=media&amp;token=8bc2193d-2791-4fc7-91ab-f81026b12447">
+    <meta property="og:image:width" content="612">
+    <meta property="og:image:height" content="605">
+    <title>캔디다이어리</title>
+    <meta name="description" content="캔디다이어리 소개 웹페이지"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>    
+    <style>
+      #foot{
+        height: 25px;
+        background: black;
+      }
+      #fix{
+        overflow: auto;
+        position: fixed;
+        top: 10;
+        right: 0;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="fix">
+        <a href="mailto:seongjae.m@egmail.com?subject=CandyDiary&body=요청사항을 말씀해주세요." class="btn btn-outline-info">Email Me</a>
+        <a href="#" class="btn btn-outline-primary">up</a>
+    </span>
+    <div class="container">
+      <div>
+          <p style="text-align:center;">
+            <img src="https://firebasestorage.googleapis.com/v0/b/foodreet-e783e.appspot.com/o/candy2.png?alt=media&amp;token=8bc2193d-2791-4fc7-91ab-f81026b12447" style="max-width:200px; max-height:200px;"/>
+          </p>
+          <h1 style="color: powderblue; text-align:center;">캔디다이어리</h1>
+          <p style="text-align:center;">환영합니다! 캔디다이어리입니다!</p>
+      </div>
+      <button class="btn btn-outline-info btn-block" data-toggle="collapse" data-target="#noti1">공지사항</button>
+        <div id="noti1" class="collapse">
+          <button class="btn btn-outline-primary btn-block" data-toggle="collapse" data-target="#notice-1">캔디다이어리?</button>
+            <div id="notice-1" class="collapse">
+              <p>캔디다이어리 앱은 여러 오픈 소스 라이선스를 활용하고, 정부 부처에서 제공하는 오픈 API를 활용하여 개발한 식단 관리 및 칼로리 계산 서비스를 위한 애플리케이션입니다. 무리한 앱 사용은 지양하고 편의성으로 사용해주세요 :) 본 앱에서 사용된 공공데이터의 출처는 공공데이터 출처란에서 확인하실 수 있습니다.</p>
+            </div>
+          <button class="btn btn-outline-primary btn-block" data-toggle="collapse" data-target="#notice-2">사용법?</button>
+            <div id="notice-2" class="collapse">
+                <strong>사용법은 크게 어렵지 않으니 몇 가지만 명시하도록 하겠습니다.</strong>
+                <ol>
+                  <li>식단 관리를 위해 날짜마다 정보를 입력할 수 있습니다. 또한, 사진과 식품 정보 등을 시간과 함께 입력할 수 있습니다.</li>
+                  <li>커뮤니티 페이지에 사진 정보와 글, 태그 목록 등을 올릴 수 있습니다.</li>
+                  <li>즐겨찾기 기능을 통해 식단과 민간 약초 정보를 저장할 수 있습니다.</li>
+                </ol>
+                <strong>위 기능들은 서버 과부하로 인해 서비스가 지연될 수 이습니다.</strong>
+            </div>
+            <button class="btn btn-outline-primary btn-block" data-toggle="collapse" data-target="#notice-3">공공데이터 출처</button>
+            <div id="notice-3" class="collapse">
+                <p>식품 영양소 정보: 식품안전정보포털<a href="https://www.foodsafetykorea.go.kr/portal/healthyfoodlife/foodnutrient/simpleSearch.do?menu_no=403&amp;menu_grp=MENU_GRP02&amp;code4=1&amp;code2=&amp;search_name=&amp;page=245">(식품 안전 나라)</a></p>
+                <p>민간 약초 정보: 농천진흥청<a href="http://www.nongsaro.go.kr/portal/ps/psz/psza/contentMain.ps?menuId=PS03954">(농사로)</a></p>
+                <p>식단 정보:  농천진흥청<a href="http://www.nongsaro.go.kr/portal/ps/psz/psza/contentMain.ps?menuId=PS03954">(농사로)</a></p>
+                <p>bmi 계산법: <a href="http://www.mohw.go.kr/react/jb/sjb030301vw.jsp?PAR_MENU_ID=03&MENU_ID=032903&CONT_SEQ=337296&page=1">보건복지부</a></p>
+                <p>필요 에너지 계산법: <a href="http://www.mohw.go.kr/react/jb/sjb030301vw.jsp?PAR_MENU_ID=03&MENU_ID=032903&CONT_SEQ=337296&page=1">보건복지부</a></a></p>
+                <p>운동을 통한 소모 칼로리 계산법: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21681120">publication from the Arizona State University</a></p>
+                <p>국내 나트륨 섭취 현황: <a href="http://www.cdc.go.kr/CDC/cms/content/mobile/11/26511_view.html">질병관리본부</a></p>
+            </div>
+        </div>
+      <button class="btn btn-outline-info btn-block" data-toggle="collapse" data-target="#noti2">개인정보처리방침</button>
+        <div id="noti2" class="collapse">
+            캔디다이어리 어플리케이션 개발자(이하 "개발자"라 함)는 귀하의 개인정보보호를 매우중요시하며, 『개인정보보호법』을 준수하고 있습니다. 개발자는 개인정보처리방침을 통하여 귀하께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+            <br /><br />
+            1. 개인정보 수집항목 및 수집방법
+            <br /><br />
+            개발자가 더 나은 서비스를 제공해 드리기 위해 수집하는 귀하의 개인정보는 아래와 같습니다. 개발자는 수집하는 개인정보에 대하여 귀하의 동의를 받고 서비스를 제공하게 됩니다.
+            <br /><br />
+            –   수집 항목<br /><br />
+            계정 이용 시 : 서비스 아이디(이메일), 이용자 이름(닉네임 포함), 비밀번호, 접속 위치, 방문 일시, 사진(메타정보 포함) 등 수집<br /><br />
+            서비스 이용 시 : 단말기정보(OS, 디바이스 아이디), 운동 정보, 성별, 나이, 키, 몸무게, IP 주소, 쿠키, 방문 일시, 접속 위치, 부정이용기록, 서비스 이용 기록 등 수집<br /><br />
+            <!-- 결제서비스 이용 시: 신용카드 정보, 통신사 정보 등과 같이 결제에 필요한 정보 -->
+            –   수집 방법<br /><br />
+            회원가입 및 서비스 이용과정에서 이용자가 개인정보 수집에 대해 동의를 하고 직접 정보를 입력하는 경우, 이용자센터를 통한 상담과정에서 개인정보를 제공받은 경우, 온·오프라인에서 진행되는 이벤트/행사 참여등.
+            <br /><br />
+            2. 개인정보 수집 및 이용 목적
+            <br /><br />
+            개발자는 서비스를 원활하게 제공하고 더욱 향상된 이용자 경험을 드리기 위해 필요한 귀하의 개인정보를 수집합니다. 귀하께서 동의한 이용약관에 따라 서비스의 기본 기능이나 여러 특화된 기능을 제공하기 위해서 귀하의 본인 여부나 계정, 연락처 및 사용기기의 확인이 필요한 경우에 귀하의 개인정보를 활용합니다.
+            또한, 새로운 서비스 개발 및 특화, 맞춤형 서비스 제공, 기능개선, 인구통계학적 특성에 따른 서비스 제공, 각종 이벤트나 광고성 정보의 제공, 법령 등에 규정된 의무의 이행, 법령이나 이용약관에 반하여 귀하에게 피해를 줄 수 있는 잘못된 이용행위의 방지를 위해서도 귀하의 개인정보가 활용됩니다.
+            <br /><br />
+            3. 개인정보 제 3자 제공
+            <br /><br />
+            개발자는 귀하의 별도 동의가 있는 경우나 법령에 규정된 경우를 제외하고는 개인정보를 절대 제 3자에게 제공하지 않습니다. 개발자는 귀하의 서비스 이용과정 등에서 따로 동의하는 경우나 법령에 규정된 경우를 제외하고는 귀하의 개인정보를 목적 범위를 초과하여 이용하거나 제 3 자에게 제공 또는 공유하지 않습니다. 서비스에 제 3 자의 서비스가 연결되어 제공되는 경우 서비스 이용을 위해 필요한 범위 내에서 귀하의 동의를 얻은후 개인정보를 제 3 자에게 제공할 수 있습니다.
+            <br /><br />
+            4. 개인정보 처리의 위탁
+            <br /><br />
+            개발자는 서비스의 원활한 제공을 위해 필요할 때에는 개인정보의 처리를 일부 위탁할 수 있습니다.
+            <br /><br />
+            5. 개인정보 파기
+            <br /><br />
+            귀하의 개인정보는 원칙적으로 개인정보 수집 및 이용목적이 달성되면 지체없이 파기하며, 절차 및방법은 아래와 같습니다. <br /><br />전자파일의 경우 복구 되지 않도록 안전하게 삭제합니다. 다만, 관계 법령에 의해 보관해야 하는 정보는 법령이 정한 기간 동안 보관합니다. ‘개인정보 유효기간제’에 따라 1년간 서비스를 이용하지 않은 회원의 개인정보를 별도로 분리 보관하여 관리할 수 있습니다.
+            <br /><br />
+            6. 개인정보 보호 책임자
+            <br /><br />
+            <ul>
+              <li>이름 : 문성재</li>
+              <li>소속 : 캔디다이어리</li>
+              <li>대표번호 : 010-4318-0221</li>
+              <li>이메일 : seongjae.m@gmail.com</li>
+            </ul>
+
+            7. 개인정보의 안정성 확보조치
+            <br /><br />
+            개발자는 이용자의 개인정보보호를 위한 기술적 대책으로서 여러 보안장치를 마련하고 있습니다. 귀하께서 제공하신 모든 정보는 보안 프로토콜 등 보안장비에 의해 안전하게 보호/관리되고 있습니다. 또한, 이용자의 개인정보보호를 위한 관리적 대책으로서 이용자의 개인정보에 대한 접근 및 관리에 필요한 절차를 마련하고,이용자의 개인정보를 처리하는 인원을 최소한으로 제한하고 개인정보를 처리하는 시스템의 사용자 비밀번호를 정기적으로 갱신하여 안전하게 관리합니다.
+            <br /><br />
+            8. 정책 변경에 따른 공지의무
+            <br /><br />
+            이 개인정보처리방침은 2018년 7월 14일에 제정되었으며 법령·정책 또는 보안기술의 변경에 따라 내용의 추가·삭제 및 수정이 있을 시에는 변경되는 개인정보 처리방침을 시행하기 최소 7일 전 홈페이지 또는 앱 내 변경 이유 및 내용 등을 공지하도록 하겠습니다.
+        </div>
+      <button class="btn btn-outline-info btn-block" data-toggle="collapse" data-target="#noti3">운영정책</button>
+        <div id="noti3" class="collapse">
+            본 운영정책은 캔디다이어리가 제공하는 ‘캔디다이어리’ 브랜드를 사용하는 서비스를 운영함에 있어, 서비스 내에 발생할 수 있는 문제 상황에 대하여 일관성 있게 대처하기 위하여 서비스 운영의 기준과 이용자 여러분이 지켜주셔야 할 세부적인 사항이 규정되어 있습니다. 운영정책을 지키지 않을 경우 불이익을 당할 수 있으니 주의 깊게 읽어 주시기 바랍니다.
+            <br /><br />
+            캔디다이어리는 캔디다이어리 서비스와 관련된 정책을 개선하고자 이용자과의 지속적인 의견 교환을통해 합리적인 운영정책을 세울 수 있도록 노력하고 있으며, 그 경우 최소 7 일 전에 서비스 공지사항을 통해 공지하도록 하겠습니다.
+            <br /><br />
+            <h2>권리와 의무</h2>
+            <h3>가. 이용자의 권리</h3>
+            <p>이용자은 온라인 문의, 전화 상담을 통해 캔디다이어리 서비스에 대한 각종 문의를 포함하여 요청 및 건의를 할 수 있습니다.</p>
+            [온라인문의] 이용시간: 24 시간<br /><br />
+            <!-- [전화상담] 월~금요일 (09:00~18:00), 토/일/공휴일 휴무(긴급 신고는 연중무휴 접수) -->
+            <p>1. 캔디다이어리는 캔디다이어리 서비스 내 이용자들 간에 발생하는 분쟁 및 이용자 스스로의 과실로 일어난 피해에 대해서는 개입하거나 조치하지 않습니다. 다만, 캔디다이어리 서비스를 이용 중 다른 이용자의 운영정책 위반 행위로 인해 피해를 입으신 경우, 이용자은 이를 캔디다이어리에 제보하여 운영정책의 적용을요청할 수 있으며 캔디다이어리는 신고 내용을 확인하고 운영정책에 따른 제재 조치를 취할 수 있습니다.</p>
+            <p>2. 운영정책의 적용 결과가 불만족스러울 경우 언제든지 온라인 문의 및 전화상담을 통해 이의를신청할 수 있습니다.</p>
+            <p>3. 캔디다이어리 서비스는 이용자에게 편의성을 주기 위해 개발되었으며, 정확성과 정밀성을 보장하지 않습니다. 더 정확한 진단은 전문의와 상담하시는 걸 부탁드립니다.</p>
+            <h3>나. 이용자의 의무</h3>
+            <p>이용자은 캔디다이어리 서비스 내에서 관계 법령을 위반하는 활동과 서비스 시스템 및 다른 회원의 정상적인 서비스 이용을 방해하는 활동을 하지 않습니다. 금지하는 활동을 하는 경우 정상적인 이용 회원의 신속한 보호를 위해 사전 안내 없이 위반/방해 활동 회원의 서비스 이용이 한시적, 영구적으로 제한할 수 있습니다.</p>
+            <h3>서비스의 이용제한과 페널티</h3>
+            <h4>가. 이용제한 사유에 해당되는 활동</h4>
+            <p>불법성 활동</p>
+            <ul>
+              <li>불법 사행성, 도박 사이트를 홍보</li>
+              <li>불법 제품 또는 인터넷에서 판매 금지된 물품을 판매하거나 홍보</li>
+              <li>범법 행위에 대한 동기 부여 및 실행에 도움이 되는 정보를 제공</li>
+              <li>악성코드, 바이러스 등의 프로그램을 설치/유포하여 이용자의 정상적인 캔디다이어리 서비스이용을 저해하거나, 이용자의 개인정보를 탈취 하려고 하는 경우</li>
+              <li>방송, 음원, 영화, 만화 등 타인의 저작물을 당사자의 동의 없이 공유</li>
+              <li>타인의 저작물을 불법적인 경로로 획득할 수 있는 정보나 방법을 제공 (예:무료 다운로드, 프리서버, CD 키 공유 등)</li>
+              <li>타인의 권리에 속하는 상표권, 의장권 등을 무단으로 침해</li>
+              <li>내 게시물(전체 및 일부), 사진, 이미지를 무단 도용(불펌)</li>
+              <li>타인의 개인정보를 포함하고 있는 내용을 작성</li>
+              <li>타인의 개인정보 및 계정, 기기를 도용/탈취하여 서비스를 가입하거나, 이용하는 경우</li>
+            </ul>
+            <p>음란, 청소년유해 활동</p>
+            <ul>
+              <li>과도한 신체 노출이나 음란한 행위를 묘사</li>
+              <li>성매매 관련 정보를 공유</li>
+              <li>타인에게 성적 수치심이나 불쾌감을 유발할 수 있는 내용을 작성</li>
+              <li>일반적인 사람이 보기에 혐오스럽고 눈살이 찌푸려지는 사진 또는 내용을 작성 (인간/동물의사체 또는 훼손된 모습, 방뇨/배설/살인/자살의 장면 등)</li>
+              <li>성별, 종교, 장애, 연령, 사회적 신분, 인종, 지역, 직업 등을 차별하거나 이에 대한 편견을조장하는 내용을 작성 도배/광고/홍보/스팸 활동</li>
+              <li>동일한 내용을 동일 서비스 또는 여러 서비스에 반복적으로 등록 (행운의 글)</li>
+              <li>타인의 동의 없이 타인의 게시글 또는 공간에 광고/홍보 및 방문 유도를 목적으로 상업적 내용을 등록/전송하거나 ‘공감’, ‘친구신청’ 등의 활동을 하는 경우</li>
+              <li>상업적 또는 홍보/광고, 악의적인 목적으로 서비스의 시스템 취약점을 이용하여 서비스를 가입/활동하는 경우</li>
+            </ul>
+            <p>계정 거래/양도/대리/교환 활동</p>
+            <ul>
+              <li>계정 및 계정 내 컨텐츠를 타인에게 판매, 양도, 대여하거나, 타인에게 그이용을 허락 또는 이를 시도하는 행위</li>
+              <li>타인의 계정 및 계정 내 컨텐츠를 취득하기 위해 구매, 양수, 교환을 시도하거나, 이를 타인에게 알선하는 활동</li>
+              <li>타인을 기망하여 타인의 계정 및 계정 내 컨텐츠를 탈취하는 행위 서비스에서 금지하는 활동</li>
+            </ul>
+            <p>서비스에서 금지하는 활동</p>
+            <ul>
+              <li>정상적인 서비스 이용으로 볼 수 없는 다량의 계정 생성 및 서비스 가입/탈퇴, 반복적 유사 활동</li>
+              <li>서비스 명칭 또는 캔디다이어리 서비스와 관련한 운영진을 사칭하여 다른 이용자를 속이거나이득을 취하는 등 피해와 혼란을 주는 행위</li>
+              <li>욕설/비속어/은어 등 통상적인 금기어 사용과 그 외 개발자와 이용자가 공유하는 상식과 사회통념에 반하는 비정상적인 활동</li>
+            </ul>
+            <p>기타 이용제한 활동</p>
+              <ul><li>사용자가 더 이상 서비스를 사용할 의사가 없음을 확인하고 재가입 제한에 동의한 후 탈퇴하는 경우</li></ul>
+            <h4>나. 이용제한의 종류</h4>
+            <p>서비스 제한</p>
+            <ul><li>해당 서비스의 이용이 한시적, 영구적으로 일부 또는 전체 제한됩니다.</li></ul>
+            <p>계정 제한</p>
+            <ul><li>모든 캔디다이어리 서비스의 이용이 한시적, 영구적으로 제한됩니다.</li></ul>
+            <p>가입/탈퇴 제한</p>
+            <ul><li>일부서비스의 경우, 해당 서비스 탈퇴 후 재가입이 일정기간 동안 제한됩니다. 위의 항목에구체적으로 해당하지 않는 사항이라 하더라도 건전한 서비스 환경 제공에 악영향을 끼치는 경우는 캔디다이어리서비스의 이용약관에 의거하여 이용이 제한될 수 있으며, 위반 활동이 반복되는 경우 가중 처리될 수 있습니다.</li></ul>
+            <strong>캔디다이어리 서비스 휴면 정책 (장기 미접속 회원의 서비스 이용 안내)</strong><br /><br/>
+            정보통신망 이용촉진 및 정보보호 등에 관한 법률 시행령에 따라 아래 기간 동안 서비스를 이용하지않으면 개인정보 파기 또는 분리보관 후 이용계약을 해지할 수 있습니다. 또한, 2 년 동안 로그인하지 않으면 개인정보 분리보관. 개인정보 분리보관 이후 3 년 동안 로그인 하지 않으면 개인정보 파기 및 이용계약 해지<br/><br/>
+            본 캔디다이어리 서비스의 운영정책에서 규정되지 않은 내용은 개별 서비스의 운영정책을 따릅니다.
+        </div>
+        <footer id="foot">
+          <p style="text-align: center; color:white;">Copyright ⓒ 2018 Seongjae Moon All rights reserved.</p>
+        </footer>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
